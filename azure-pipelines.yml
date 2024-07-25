@@ -7,8 +7,8 @@ pool:
 variables:
   dockerRegistryServiceConnection: 'Image-ACR-Appservice'
   imageName: 'mynodeapp'
-  azureSubscription: 'Image-ACRpush-deploytoAppservice' # Add your Azure subscription service connection name
-  appServiceName: 'Azurewebappsuma' # Add your App Service name
+  azureSubscription: 'Image-ACRpush-deploytoAppservice' 
+  appServiceName: 'Azurewebappsuma' 
 
 steps:
 - checkout: self
