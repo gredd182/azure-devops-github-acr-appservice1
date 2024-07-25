@@ -16,7 +16,8 @@ steps:
   inputs:
     command: build
     repository: $(imageName)
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: 'mynodeapp/Dockerfile'
+    buildContext: '$(Build.SourcesDirectory)/mynodeapp'
     tags: |
       $(Build.BuildId)
 
