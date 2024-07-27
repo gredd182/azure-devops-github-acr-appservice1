@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  dockerRegistryServiceConnection: 'Suma-ACR-ServiceConnection'
+  dockerRegistryServiceConnection: 'Suma-AzureCloud-ServiceConnection'
   imageName: 'mynodeapp'
   azureSubscription: 'Image-ACRpush-deploytoAppservice' 
   appServiceName: 'Azurewebappsuma' 
