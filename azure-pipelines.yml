@@ -23,11 +23,11 @@ steps:
     tags: |
       $(Build.BuildId)
 
-# - task: AzureWebAppContainer@1
-#   displayName: 'Deploy to Azure App Service'
-#   inputs:
-#     azureSubscription: $(azureSubscription)
-#     appName: $(appServiceName)
-#     imageName: 'azureappservice.azurecr.io/$(imageName):$(Build.BuildId)'
-#     dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
-#     containerCommand: ''
+- task: AzureWebAppContainer@1
+  displayName: 'Deploy to Azure App Service'
+  inputs:
+    azureSubscription: $(azureSubscription)
+    appName: $(appServiceName)
+    imageName: 'azureappservice.azurecr.io/$(imageName):$(Build.BuildId)'
+    dockerRegistryEndpoint: $(dockerRegistryServiceConnection)
+    containerCommand: ''
